@@ -1,0 +1,11 @@
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\bin\ExtJsTest.dll.config
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\bin\ExtJsTest.dll
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\bin\ExtJsTest.pdb
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\obj\Debug\ExtJsTest.csprojResolveAssemblyReference.cache
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\obj\Debug\ExtJsTest.dll
+C:\Users\albert.samigullin\Documents\ExtJS\Projects\ExtJsTest\ExtJsTest\obj\Debug\ExtJsTest.pdb
+C:\projects\Frontend\ExtJsTest\bin\ExtJsTest.dll
+C:\projects\Frontend\ExtJsTest\bin\ExtJsTest.pdb
+C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.csprojResolveAssemblyReference.cache
+C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.dll
+C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.pdb
