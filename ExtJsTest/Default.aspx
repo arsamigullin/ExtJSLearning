@@ -17,6 +17,29 @@
     <script>
         Ext.onReady(function() {
             Ext.Msg.alert('Hello', 'The DOM IS Ready');
+            var myDiv1 = Ext.get('div1');
+            //myDiv1.setHeight(200);
+            myDiv1.setSize(350, 350, { duration: 1, easing: 'bounceOut' });
+            myDiv1.createChild('Child from a string');
+            myDiv1.createChild({
+                tag      : 'div',
+                id       : 'nestedDiv',
+                style    : 'border: 1px dashed; padding: 5px;',
+                children : {
+                    tag    : 'div',
+                    html   : '...a nested div',
+                    style: 'color: #EE0000; border: 1px solid'
+                }
+            });
+            myDiv1.insertFirst({
+                tag: 'div',
+                html: 'Child inserted as node 0 of myDiv1'
+            });
+            myDiv1.createChild({
+                tag: 'div',
+                id: 'removeMeLater',
+                html: 'Child inserted as node 2 of myDiv1'
+            }, myDiv1.dom.childNodes[3]);
         })
         //Ext.onReady(function () {
         //    Ext.create('Ext.window.Window', {
@@ -31,6 +54,18 @@
         //});
 
     </script>
+    
+    <style type="text/css">
+     .myDiv {
+         border: 1px solid #AAAAAA; 
+         width: 200px; 
+         height: 35px;
+         cursor: pointer;
+         padding: 2px 2px 2px 2px;
+         margin: 2px 2px 2px 2px;
+     }
+ </style>
+ <div id='div1' class='myDiv'> </div>
 </head>
 <body>
     <form id="form1" runat="server">
