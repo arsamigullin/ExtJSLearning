@@ -12,15 +12,19 @@
     <link href="extjs/resource/css/theme-neptune-all.css" rel="stylesheet" />
     <script src="extjs/ext-all.js"></script>
     <script src="extjs/theme-classic.js"></script>
-    <script type="text/javascript" src='Script/hello_world.js'>
-    </script>   
+    <script type="text/javascript" src='Script/hello_world.js'></script>   
+<script src="Script/XTemplateTest.js"></script>
     <script>
-        Ext.onReady(function() {
+        Ext.onReady(function () {
+            AdvancedXTemplateTest();
+            //XTemplatesTest();
+            // templateTest();
+            //createNodes();
             //Ext.getBody().load({
             //    url: 'htmlFragment.html',
             //    scripts: true
             //});
-            templateTest();
+            // templateTest();
             //createNodes();
         });
         //Ext.onReady(function () {
@@ -34,7 +38,10 @@
         //        items: formPanel
         //    }).show();
         //});
+
+
         function templateTest() {
+            // Create template
             var myTpl = Ext.create('Ext.Template', "<div>Hello {0}.</div>");
             myTpl.append(document.body, ['Marjan']);
             myTpl.append(document.body, ['Michael']);
@@ -47,7 +54,9 @@
                 '<b> DOB :</b> {dob}<br />',
                 '</div>'
             ]);
+            // compile - this is speed work application
             myTpl.compile();
+            // call template with some arguments
             myTpl.append(document.body, {
                 color: "#E9E9FF",
                 name: 'John Smith',

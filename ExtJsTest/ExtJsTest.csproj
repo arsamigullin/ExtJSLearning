@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +63,7 @@
     <Content Include="extjs\resource\css\theme-neptune-all_1.css" />
     <Content Include="extjs\resource\css\theme-neptune-all_2.css" />
     <Content Include="htmlFragment.html" />
+    <Content Include="Script\XTemplateTest.js" />
     <Content Include="styles\theme-classic-all.css" />
     <Content Include="extjs\theme-classic.js" />
     <Content Include="extjs\theme-neptune.js" />

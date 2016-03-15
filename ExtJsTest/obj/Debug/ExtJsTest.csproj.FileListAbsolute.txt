@@ -9,3 +9,9 @@ C:\projects\Frontend\ExtJsTest\bin\ExtJsTest.pdb
 C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.csprojResolveAssemblyReference.cache
 C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.dll
 C:\projects\Frontend\ExtJsTest\obj\Debug\ExtJsTest.pdb
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\bin\ExtJsTest.dll.config
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\bin\ExtJsTest.dll
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\bin\ExtJsTest.pdb
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\obj\Debug\ExtJsTest.csprojResolveAssemblyReference.cache
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\obj\Debug\ExtJsTest.dll
+C:\projects\git\Learning\ExtJSLearning\ExtJsTest\obj\Debug\ExtJsTest.pdb
