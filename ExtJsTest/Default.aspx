@@ -12,11 +12,15 @@
     <link href="extjs/resource/css/theme-neptune-all.css" rel="stylesheet" />
     <script src="extjs/ext-all.js"></script>
     <script src="extjs/theme-classic.js"></script>
-    <script type="text/javascript" src='Script/hello_world.js'></script>   
-<script src="Script/XTemplateTest.js"></script>
+<%--    <script type="text/javascript" src='Script/hello_world.js'></script>   
+<script src="Script/XTemplateTest.js"></script>--%>
+    <script src="Script/ContainerSmallTest.js"></script>
     <script>
         Ext.onReady(function () {
-            AdvancedXTemplateTest();
+            //debugger;
+            myWin.show();
+            addPanel();
+            // AdvancedXTemplateTest();
             //XTemplatesTest();
             // templateTest();
             //createNodes();
@@ -40,66 +44,66 @@
         //});
 
 
-        function templateTest() {
-            // Create template
-            var myTpl = Ext.create('Ext.Template', "<div>Hello {0}.</div>");
-            myTpl.append(document.body, ['Marjan']);
-            myTpl.append(document.body, ['Michael']);
-            myTpl.append(document.body, ['Sebastian']);
+        //function templateTest() {
+        //    // Create template
+        //    var myTpl = Ext.create('Ext.Template', "<div>Hello {0}.</div>");
+        //    myTpl.append(document.body, ['Marjan']);
+        //    myTpl.append(document.body, ['Michael']);
+        //    myTpl.append(document.body, ['Sebastian']);
 
-            myTpl = Ext.create('Ext.Template', [
-                '<div style="background-color: {color}; margin: 10px;">',
-                '<b> Name :</b> {name}<br />',
-                '<b> Age :</b> {age}<br />',
-                '<b> DOB :</b> {dob}<br />',
-                '</div>'
-            ]);
-            // compile - this is speed work application
-            myTpl.compile();
-            // call template with some arguments
-            myTpl.append(document.body, {
-                color: "#E9E9FF",
-                name: 'John Smith',
-                age: 20,
-                dob: '10/20/89'
-            });
-            myTpl.append(document.body, {
-                color: "#FFE9E9",
-                name: 'Naomi White',
-                age: 25,
-                dob: '03/17/84'
-            });
-        }
+        //    myTpl = Ext.create('Ext.Template', [
+        //        '<div style="background-color: {color}; margin: 10px;">',
+        //        '<b> Name :</b> {name}<br />',
+        //        '<b> Age :</b> {age}<br />',
+        //        '<b> DOB :</b> {dob}<br />',
+        //        '</div>'
+        //    ]);
+        //    // compile - this is speed work application
+        //    myTpl.compile();
+        //    // call template with some arguments
+        //    myTpl.append(document.body, {
+        //        color: "#E9E9FF",
+        //        name: 'John Smith',
+        //        age: 20,
+        //        dob: '10/20/89'
+        //    });
+        //    myTpl.append(document.body, {
+        //        color: "#FFE9E9",
+        //        name: 'Naomi White',
+        //        age: 25,
+        //        dob: '03/17/84'
+        //    });
+        //}
 
-        function createNodes() {
-            Ext.Msg.alert('Hello', 'The DOM IS Ready');
-            var myDiv1 = Ext.get('div1');
-            //myDiv1.setHeight(200);
-            myDiv1.setSize(350, 350, { duration: 1, easing: 'bounceOut' });
-            myDiv1.createChild('Child from a string');
-            myDiv1.createChild({
-                tag: 'div',
-                id: 'nestedDiv',
-                style: 'border: 1px dashed; padding: 5px;',
-                children: {
-                    tag: 'div',
-                    html: '...a nested div',
-                    style: 'color: #EE0000; border: 1px solid'
-                }
-            });
-            myDiv1.insertFirst({
-                tag: 'div',
-                html: 'Child inserted as node 0 of myDiv1'
-            });
-            myDiv1.createChild({
-                tag: 'div',
-                id: 'removeMeLater',
-                html: 'Child inserted as node 2 of myDiv1'
-            }, myDiv1.dom.childNodes[3]);
-        }
+        //function createNodes() {
+        //    Ext.Msg.alert('Hello', 'The DOM IS Ready');
+        //    var myDiv1 = Ext.get('div1');
+        //    //myDiv1.setHeight(200);
+        //    myDiv1.setSize(350, 350, { duration: 1, easing: 'bounceOut' });
+        //    myDiv1.createChild('Child from a string');
+        //    myDiv1.createChild({
+        //        tag: 'div',
+        //        id: 'nestedDiv',
+        //        style: 'border: 1px dashed; padding: 5px;',
+        //        children: {
+        //            tag: 'div',
+        //            html: '...a nested div',
+        //            style: 'color: #EE0000; border: 1px solid'
+        //        }
+        //    });
+        //    myDiv1.insertFirst({
+        //        tag: 'div',
+        //        html: 'Child inserted as node 0 of myDiv1'
+        //    });
+        //    myDiv1.createChild({
+        //        tag: 'div',
+        //        id: 'removeMeLater',
+        //        html: 'Child inserted as node 2 of myDiv1'
+        //    }, myDiv1.dom.childNodes[3]);
+        //}
     </script>
     
-    <style type="text/css">
+<%--    <style type="text/css">
      .myDiv {
          border: 1px solid #AAAAAA; 
          width: 200px; 
@@ -108,14 +112,14 @@
          padding: 2px 2px 2px 2px;
          margin: 2px 2px 2px 2px;
      }
- </style>
- <div id='div1' class='myDiv'> </div>
+ </style>--%>
+<%-- <div id='div1' class='myDiv'> </div>--%>
 </head>
-<body>
+<%--<body>
     <form id="form1" runat="server">
     <div>
     
     </div>
     </form>
-</body>
+</body>--%>
 </html>
